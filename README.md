@@ -1,3 +1,5 @@
+## Please note that I have decided to replace SmartThings in favor of a Zigbee/Zwave USB stick connected directly my Home Assistant server. This device handler's code is available for anyone to review/modify, but I will no longer participate in its development. Thank you ##
+
 # WLED-SmartThings
 SmartThings Device handler for WLED
 
