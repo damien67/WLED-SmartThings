@@ -3,16 +3,12 @@
 # WLED-SmartThings
 SmartThings Device handler for WLED
 
- - Copy all content of the device handler file into you ST IDE.
- - Add device through IDE
- - Setup IP and port in ST app (type port even though already there!!!)
- - Done
-
  - In the SmarThings IDE, go to “My device handlers”
  - Create new device handler
  - From Code
- - Paste the code
+ - Paste the code of the device handler file
  - Click Create, then save and Publish for me
+
 
 Then, click on “My devices”, and
 
