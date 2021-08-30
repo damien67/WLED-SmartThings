@@ -79,6 +79,8 @@ def setLevel(Integer value,rate=0) {
     
 	//log.debug("Turn ON, Color:${state.SavedColor}, Brightness: ${state.SavedLevel}, Color2: ${state.SavedColor2}")
 	
+    value = Math.round(255 / 100 * value)
+    
     return sendGetRequest("/win&A=${value}")
 }
 
