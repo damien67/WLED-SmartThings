@@ -61,7 +61,7 @@ def off() {
     sendEvent(name: "switch", value: "off", isStateChange: true)
     //log.debug("Turn OFF")
     
-    return sendGetRequest("/win&T=0")
+    sendGetRequest("/win&T=0")
 } 
 def on() {
     sendEvent(name: "switch", value: "on", isStateChange: true)
@@ -85,9 +85,7 @@ def setLevel(Integer value,rate=0) {
     
     //log.debug("Turn ON, Color:${state.SavedColor}, Brightness: ${state.SavedLevel}, Color2: ${state.SavedColor2}")
     
-    value = Math.round(255 / 100 * value)
-    
-    return sendGetRequest("/win&A=${value}")
+    sendGetRequest("/win&A=${value}")
 }
 
 /*
@@ -107,7 +105,7 @@ def setColor(value) {
     def h = (value.hue)*65535/100
     def s = (value.saturation)*255/100
     
-    return sendGetRequest("/win&HU=${h}&SA=${s}")
+    sendGetRequest("/win&HU=${h}&SA=${s}")
 }
 
 /*
